@@ -28,7 +28,7 @@ Este projeto permite cortar vídeos em segmentos menores com base em tempos de i
 ## Uso
 1. Execute o script de corte de vídeo:
     ```bash
-    python video-cut.py
+    python main.py
     ```
 2. Siga as instruções na tela para fornecer o caminho do vídeo, o tempo de início e o tempo de fim para o corte.
 3. O vídeo cortado será salvo no mesmo diretório do vídeo original com um sufixo "_cut" no nome do arquivo.
