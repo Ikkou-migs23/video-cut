@@ -14,6 +14,12 @@ Este projeto permite cortar vídeos em segmentos menores com base em tempos de i
 - Python 3.9 ou superior
 - Biblioteca MoviePy
 - FFmpeg instalado no sistema
+
+## Melhorias Futuras
+- Suporte para mais formatos de vídeo.
+- Interface gráfica para facilitar o uso.
+- Velocidade de processamento aprimorada.
+
 ## Instalação
 1. Clone este repositório:
     ```bash
