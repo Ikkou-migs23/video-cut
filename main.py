@@ -16,7 +16,7 @@ duracao_corte = 60
 numero_cortes = int(duracao_total // duracao_corte)
 
 print(f"Iniciando os {numero_cortes} cortes")
-"""
+
 # loop para a produção dos cortes:
 for i in range(numero_cortes):
     inicio = i * duracao_corte
@@ -42,7 +42,7 @@ for i in range(numero_cortes):
         print("Aguardando 2 segundos...")
         time.sleep(2)
     print("Cortes realizados")
-"""
+
 # Ultima etapa, pegar o ultimo corte (podemos chamar de sobra)
 tempo_total_cortes = duracao_corte * numero_cortes
 # loop para pegar o ultimo pedaço do video:
