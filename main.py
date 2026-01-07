@@ -3,9 +3,12 @@ from moviepy import VideoFileClip, TextClip, CompositeVideoClip
 import time
 import os 
 
+# Variaveis para obtenção de informações:
+nome_dos_cortes = input(str("Qual nome deseja dar aos seus cortes!\n"))
+
 # variavel contendo o arquivo original
-caminho_video_original = r"/home/migs/Documentos/estudos/video-cut/video_origin/3continentes-96---será-que-o-natal-em-cada-continente-é-diferente.mp4"
-caminho_video_corte = r"/home/migs/Documentos/estudos/video-cut/video_cut"
+caminho_video_original = r"/home/migs/Documentos/estudos/Scrip-Cut-Video/video_origin/gokaiger.mkv"
+caminho_video_corte = r"/home/migs/Documentos/estudos/Scrip-Cut-Video/video_cut/gokai"
 os.makedirs(caminho_video_corte, exist_ok=True)
 
 
@@ -31,7 +34,7 @@ for i in range(numero_cortes):
     corte = video_original.subclipped(inicio, fim)
 
     # salvar
-    corte.write_videofile(os.path.join(caminho_video_corte, f"natal_{i+1:03d}.mp4"))
+    corte.write_videofile(os.path.join(caminho_video_corte, f"{nome_dos_cortes}_{i+1:03d}.mp4"))
 
     # Liberar memória
     corte.close()
@@ -56,7 +59,7 @@ for i in range(1):
     corte = video_original.subclipped(inicio, fim)
 
     # salvar
-    corte.write_videofile(os.path.join(caminho_video_corte, "natal_57.mp4"))
+    corte.write_videofile(os.path.join(caminho_video_corte, f"{nome_dos_cortes}_sobra.mp4"))
 
     # Liberar memória
     corte.close()

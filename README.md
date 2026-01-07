@@ -8,7 +8,7 @@
 Este projeto permite cortar vídeos em segmentos menores com base em tempos de início e fim especificados pelo usuário. Ele é útil para quem deseja extrair partes específicas de um vídeo para edição ou compartilhamento.
 
 ## Funcionalidades
-- Cortar vídeos em formato popular (MP4).
+- Cortar vídeos em formatos populares (MP4 e MKV).
 
 ## Requisitos
 - Python 3.9 ou superior
