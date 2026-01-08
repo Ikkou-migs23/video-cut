@@ -6,10 +6,13 @@ import os
 # Variaveis para obtenção de informações:
 nome_dos_cortes = input(str("Qual nome deseja dar aos seus cortes!\n"))
 
-# variavel contendo o arquivo original
-caminho_video_original = r"/home/migs/Documentos/estudos/Scrip-Cut-Video/video_origin/gokaiger.mkv"
-caminho_video_corte = r"/home/migs/Documentos/estudos/Scrip-Cut-Video/video_cut/gokai"
-os.makedirs(caminho_video_corte, exist_ok=True)
+# variaveis para obtencao dos path's:
+caminho_video_original = input("Digite o caminho onde esta o video\nEX: /home/Documents...\n")
+caminho_video_original = os.path.normpath(caminho_video_original)
+
+caminho_video_corte = input("Digite o local onde deseja salvar os cortes\nEX: /home/Documents...\n")
+caminho_video_corte = os.path.normpath(caminho_video_corte)
+
 
 
 # constantes
