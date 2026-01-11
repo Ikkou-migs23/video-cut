@@ -13,12 +13,12 @@ caminho_video_original = os.path.normpath(caminho_video_original)
 caminho_video_corte = input("Digite o local onde deseja salvar os cortes\nEX: /home/Documents...\n")
 caminho_video_corte = os.path.normpath(caminho_video_corte)
 
+duracao_corte = int(input("Qual a duração você deseja que os cortes tenha?\n"))
 
 
 # constantes
 video = VideoFileClip(caminho_video_original)
 duracao_total = video.duration
-duracao_corte = 60
 numero_cortes = int(duracao_total // duracao_corte)
 
 print(f"Iniciando os {numero_cortes} cortes")
