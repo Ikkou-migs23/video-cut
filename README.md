@@ -17,8 +17,12 @@ Este projeto permite cortar vídeos em segmentos menores com base em tempos de i
 
 ## Melhorias Futuras
 - Suporte para mais formatos de vídeo.
-- Interface gráfica para facilitar o uso.
 - Velocidade de processamento aprimorada.
+
+## Como Usar
+- Tenha o material bruto já editado e pronto para o corte. Assim, o processo de corte será mais eficiente e você terá um resultado mais preciso.
+- Certifique-se de que o vídeo que você deseja cortar esteja em um formato compatível (MP4 ou MKV).
+- Tenha os diretórios de entrada e saída organizados para facilitar o acesso aos arquivos de vídeo.
 
 ## Instalação
 1. Clone este repositório:
